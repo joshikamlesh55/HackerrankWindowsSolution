@@ -19,7 +19,12 @@ int main()
         if(n<0) {
           cout<<-1<<endl;
       } else cout<<n/3<<" 1 0\n";
-    }--
+    }else if(n%3==1){ n = n - 7; 
+         if(n<0) cout<<-1<<endl;
+                   else { 
+                    cout<<n/3<<" 0 1"<<endl; 
+                     }
+                    }
 }
   return 0;
 }
